@@ -1,4 +1,4 @@
-import {withRouter} from 'react-router-dom'
+import {withRouter, Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 import './index.css'
@@ -14,7 +14,9 @@ const Header = props => {
     <div>
       <h1>Daily Mood Tracker</h1>
       <ul>
-        <li>Home</li>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
         <li>Reports</li>
         <li>
           <button type="button" onClick={handleLogout}>
