@@ -1,0 +1,9 @@
+.not-found-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.notfound-content {
+  text-align: center;
+}

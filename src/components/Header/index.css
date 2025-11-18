@@ -1,0 +1,30 @@
+.nav-con {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #42404d;
+}
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+}
+.nav-item {
+  text-decoration: none;
+}
+.nav-items {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.logoutbtn {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 6px;
+  padding: 4px 26px 4px 26px;
+  border: 1px solid #ffbe38;
+  background: transparent;
+  color: #ffbe38;
+}
+.title {
+  margin-top: 0px;
+  color: #ffbe38;
+}

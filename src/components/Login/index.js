@@ -56,8 +56,10 @@ class Login extends Component {
   renderUsername = () => {
     const {usernameInput} = this.state
     return (
-      <div>
-        <label htmlFor="username">USERNAME</label>
+      <div className="input-div">
+        <label htmlFor="username" className="label-sec">
+          USERNAME
+        </label>
         <br />
         <input
           type="text"
@@ -65,6 +67,7 @@ class Login extends Component {
           onChange={this.enterUsername}
           id="username"
           value={usernameInput}
+          className="input-sec"
         />
       </div>
     )
@@ -74,8 +77,10 @@ class Login extends Component {
     const {passwordInput, showpassword} = this.state
 
     return (
-      <div>
-        <label htmlFor="password">PASSWORD</label>
+      <div className="input-div">
+        <label htmlFor="password" className="label-sec">
+          PASSWORD
+        </label>
         <br />
         <input
           type={showpassword ? 'text' : 'password'}
@@ -83,6 +88,7 @@ class Login extends Component {
           onChange={this.enterPassword}
           id="password"
           value={passwordInput}
+          className="input-sec"
         />
       </div>
     )
@@ -96,17 +102,27 @@ class Login extends Component {
     }
 
     return (
-      <div>
-        <div>
-          <form onSubmit={this.formSubmit}>
+      <div className="login-con">
+        <div className="form-con">
+          <form onSubmit={this.formSubmit} className="form-sec">
+            <h1 className="login-head">Daily Mood Tracker</h1>
             {this.renderUsername()}
             {this.renderPassword()}
             <div>
-              <input type="checkbox" id="cb" onChange={this.clickCheckbox} />
-              <label htmlFor="cb">Show Password</label>
+              <input
+                type="checkbox"
+                id="cb"
+                onChange={this.clickCheckbox}
+                className="check-sec"
+              />
+              <label htmlFor="cb" className="label-sec">
+                Show Password
+              </label>
             </div>
-            <button type="submit">Login</button>
-            {showErrorMsg && <p>{errorMsg}</p>}
+            <button type="submit" className="login-btn">
+              Login
+            </button>
+            {showErrorMsg && <p className="error">{errorMsg}</p>}
           </form>
         </div>
       </div>

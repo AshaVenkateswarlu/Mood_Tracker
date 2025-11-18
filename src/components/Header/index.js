@@ -11,15 +11,15 @@ const Header = props => {
   }
 
   return (
-    <div>
-      <h1>Daily Mood Tracker</h1>
-      <ul>
-        <Link to="/">
-          <li>Home</li>
+    <div className="nav-con">
+      <h1 className="title">Daily Mood Tracker</h1>
+      <ul className="nav-menu">
+        <Link to="/" className="nav-item">
+          <li className="nav-items">Home</li>
         </Link>
-        <li>Reports</li>
+        <li className="nav-items">Reports</li>
         <li>
-          <button type="button" onClick={handleLogout}>
+          <button type="button" onClick={handleLogout} className="logoutbtn">
             Logout
           </button>
         </li>

@@ -1,0 +1,104 @@
+.login-con {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-con {
+  background-image: linear-gradient(
+    142.42deg,
+    rgba(114, 104, 117, 0.21) 1.79%,
+    rgba(117, 116, 117, 0) 100.42%
+  );
+  border-radius: 15px;
+  width: 797px;
+  height: 509px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-image-source: linear-gradient(
+    139.28deg,
+    rgba(19, 18, 18, 0.28) 2.05%,
+    rgba(53, 51, 51, 0) 92.82%
+  );
+
+  box-shadow: inset 6px 6px 16px #515151;
+}
+.form-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-head {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: bold;
+  text-align: center;
+}
+.label-sec {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Roboto';
+}
+.input-sec {
+  background-color: #343243;
+  border-radius: 39px;
+  height: 40px;
+  width: 360px;
+  border: 1px solid #d7dfe9;
+  color: #d7dfe9;
+  font-size: 12px;
+  padding: 10px;
+  outline: none;
+}
+.check-sec {
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+  margin-right: 8px;
+}
+.login-btn {
+  height: 40px;
+  width: 360px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: #ffbe38;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+.error {
+  color: #ef4444;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+.input-div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .form-con {
+    width: 312;
+    height: 420;
+    opacity: 1;
+    top: 104px;
+    left: 24px;
+    border-radius: 28px;
+    border-width: 2px;
+    padding: 10px;
+  }
+  .login-con{
+    padding: 20px;
+  }
+  .login-head{
+    font-size: 24px;
+  }
+}
