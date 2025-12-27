@@ -1,13 +1,12 @@
-import {Route, Switch, Redirect} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 
 import Login from './components/Login'
 import Home from './components/Home'
 import ProtectedRoute from './components/ProtectedRoute'
 import NotFound from './components/NotFound'
+import Reports from './components/Reports'
 
 import './App.css'
-
-// #region - Use these lists in your code.
 
 const daysList = [
   {
@@ -2351,14 +2350,12 @@ const emojisList = [
   },
 ]
 
-// #endregion
-
 const App = () => (
   <Switch>
     <Route exact path="/login" component={Login} />
     <ProtectedRoute exact path="/" component={Home} />
-    <Route path="/not-found" component={NotFound} />
-    <Redirect to="/not-found" />
+    <ProtectedRoute exact path="/reports" component={Reports} />
+    <Route component={NotFound} />
   </Switch>
 )
 

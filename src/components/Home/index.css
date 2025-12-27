@@ -1,0 +1,6 @@
+.home-con {
+  min-width: 400px;
+  background-image: url("https://assets.ccbp.in/frontend/react-js/nxt-slides/monthly-emojis-bg.png");
+  background-size: cover;
+  height: 100vh;
+}

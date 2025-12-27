@@ -5,6 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* width: 100%; */
+  min-width: 400px;
 }
 .form-con {
   background-image: linear-gradient(
@@ -23,7 +25,7 @@
     rgba(19, 18, 18, 0.28) 2.05%,
     rgba(53, 51, 51, 0) 92.82%
   );
-
+  min-width: 400px;
   box-shadow: inset 6px 6px 16px #515151;
 }
 .form-sec {
@@ -86,8 +88,8 @@
 
 @media screen and (max-width: 767px) {
   .form-con {
-    width: 312;
-    height: 420;
+    width: 100%;
+    height: 80%;
     opacity: 1;
     top: 104px;
     left: 24px;
@@ -95,10 +97,10 @@
     border-width: 2px;
     padding: 10px;
   }
-  .login-con{
+  .login-con {
     padding: 20px;
   }
-  .login-head{
+  .login-head {
     font-size: 24px;
   }
 }
